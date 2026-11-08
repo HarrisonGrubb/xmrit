@@ -24,3 +24,7 @@ The following steps will get you set up to contribute changes to this repo:
 2. Clone your fork locally
 3. Install dependencies by running `npm install`
 4. Start local dev server by running `npm run start`
+
+## Notebook: XmR charts for business metrics
+
+`notebooks/xmr_business_metrics_colab.ipynb` is a self-contained Google Colab notebook that teaches, with synthetic data and known injected signals, how to apply XmR charts to weekly business-review metrics: day-of-week and annual seasonality, new locations with no baseline, sustained growth, limit recalculation and phase charts, and a set of common pain points (variable denominators, rare events, bounded metrics, lagged outcomes, mix shift, roll-up masking, calendar artifacts, targets vs. natural limits). It ends with an executive translation layer and a metric-registry pattern for productising the approach. Open it in Colab via `File → Open notebook → GitHub` and paste the file path, or upload it directly.
