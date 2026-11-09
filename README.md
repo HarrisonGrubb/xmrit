@@ -25,8 +25,15 @@ The following steps will get you set up to contribute changes to this repo:
 3. Install dependencies by running `npm install`
 4. Start local dev server by running `npm run start`
 
-## Notebook: XmR charts for business metrics
+## Notebooks: XmR charts for business metrics
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HarrisonGrubb/xmrit/blob/main/notebooks/xmr_business_metrics_colab.ipynb)
+A self-contained Google Colab notebook that teaches, with synthetic data and known injected signals, how to apply XmR charts to weekly business-review metrics: day-of-week and annual seasonality, new locations with no baseline, sustained growth, limit recalculation and phase charts, and a set of common pain points (variable denominators, rare events, bounded metrics, lagged outcomes, mix shift, roll-up masking, calendar artifacts, targets vs. natural limits). It ends with an executive translation layer and a metric-registry pattern for productising the approach.
 
-`notebooks/xmr_business_metrics_colab.ipynb` is a self-contained Google Colab notebook that teaches, with synthetic data and known injected signals, how to apply XmR charts to weekly business-review metrics: day-of-week and annual seasonality, new locations with no baseline, sustained growth, limit recalculation and phase charts, and a set of common pain points (variable denominators, rare events, bounded metrics, lagged outcomes, mix shift, roll-up masking, calendar artifacts, targets vs. natural limits). It ends with an executive translation layer and a metric-registry pattern for productising the approach. Click the badge above to open it in Colab, or use `File → Open notebook → GitHub` there and paste the file path.
+It comes in two versions with identical content:
+
+| Version | Use it to | Open |
+|---|---|---|
+| `notebooks/xmr_business_metrics_colab.ipynb` | run the code yourself (outputs cleared) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HarrisonGrubb/xmrit/blob/main/notebooks/xmr_business_metrics_colab.ipynb) |
+| `notebooks/xmr_business_metrics_colab_executed.ipynb` | read it with every chart and result already rendered | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HarrisonGrubb/xmrit/blob/main/notebooks/xmr_business_metrics_colab_executed.ipynb) |
+
+Both produce the same results because all data comes from a fixed random seed. You can also open either one in Colab with `File → Open notebook → GitHub` and the file path.
